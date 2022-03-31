@@ -12,7 +12,7 @@ Helpful links for educational purposes:
 4. Amazon ECR in case we wish to save this image:
 https://docs.aws.amazon.com/AmazonECR/latest/userguide/getting-started-cli.html
 
-
+Steps below are all on the EC2 instance.
 
 ### Step 1: Clone and build a docker image.
 
