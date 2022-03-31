@@ -31,6 +31,10 @@ otherwise
 ```
 nvidia-docker run -it --rm sentiment-hf:latest1
 ```
+To expose port 8080 externally add ` -p 8080 -p 8080:80` as a parameter to the run command above. Ensure these ports are accessible
+via the security profile on AWS externally. 
+
+HTTPS can be enabled by providing the certificate to python flask, see here https://blog.miguelgrinberg.com/post/running-your-flask-application-over-https
 
 ### Step 3: Test with a curl request
 Get a shell into the docker: do `docker exec --it container_hash bash` where container_hash comes from `docker container ls`.
