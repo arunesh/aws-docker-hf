@@ -1,4 +1,4 @@
-# Repo aws-docker-hf
+## Repo aws-docker-hf
 
 
 This repo shows how to run a dockerized Huggingface transformer on EC2 instance with NVIDIA GPU support available for inferencing.
@@ -14,7 +14,7 @@ https://docs.aws.amazon.com/AmazonECR/latest/userguide/getting-started-cli.html
 
 
 
-## Step 1: Clone and build a docker image.
+### Step 1: Clone and build a docker image.
 
 ```
 git clone https://github.com/arunesh/aws-docker-hf
@@ -22,7 +22,7 @@ cd aws-docker-hf
 docker build -t sentiment-hf:latest1 .
 ```
 
-## Step 2: Run the docker
+### Step 2: Run the docker
 Run `docker version` to check if version > 19.03
 ```
 docker run --gpus all -it --rm sentiment-hf:latest1
@@ -32,7 +32,7 @@ otherwise
 nvidia-docker run -it --rm sentiment-hf:latest1
 ```
 
-## Step 3: Test with a curl request
+### Step 3: Test with a curl request
 Get a shell into the docker: do `docker exec --it container_hash bash` where container_hash comes from `docker container ls`.
 
 ```
