@@ -6,7 +6,6 @@ history = [{'content': 'i am feeling good about CoachAI', 'date': '03-30-2022', 
           {'content': 'doing flask and its pretty cool', 'date': '03-30-2022', 'id': '2'}]
 
 
-# NO PYTORCH
 tokenizer = AutoTokenizer.from_pretrained(
     "distilbert-base-uncased-finetuned-sst-2-english")
 
