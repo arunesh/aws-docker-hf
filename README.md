@@ -37,7 +37,7 @@ via the security profile on AWS externally.
 HTTPS can be enabled by providing the certificate to python flask, see here https://blog.miguelgrinberg.com/post/running-your-flask-application-over-https
 
 ### Step 3: Test with a curl request
-Get a shell into the docker: do `docker exec --it container_hash bash` where container_hash comes from `docker container ls`.
+Get a shell into the docker: do `docker exec -it container_hash bash` where container_hash comes from `docker container ls`.
 
 ```
 apt-get install curl
