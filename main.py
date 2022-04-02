@@ -41,4 +41,5 @@ def createTweet():
     return jsonify({'data': history})
 
 if __name__ == '__main__':
-    app.run(debug=True, port=8080)  # run app on port 8080 in debug mode
+    app.run(debug=True, port=8080, host='0.0.0.0')  # run app on port 8080 in debug mode.
+# host parameter is key to allow connections from outside the Docker !
